@@ -1,8 +1,8 @@
 package pl.against.musicalstructure;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
-        ImageView album1 = (ImageView) findViewById(R.id.album1);
+        // Find the View that shows the album1
+        ImageView album1 = findViewById(R.id.album1);
 
 // Set a click listener on that View
         album1.setOnClickListener(new View.OnClickListener() {

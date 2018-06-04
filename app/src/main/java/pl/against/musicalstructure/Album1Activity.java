@@ -2,7 +2,7 @@ package pl.against.musicalstructure;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ListView;
+import android.widget.GridView;
 
 import java.util.ArrayList;
 
@@ -20,9 +20,9 @@ public class Album1Activity extends AppCompatActivity {
 
     SongAdapter adapter = new SongAdapter(this, songs);
 
-    ListView listView = (ListView) findViewById(R.id.list);
+        GridView gridView = findViewById(R.id.gridview);
 
-        listView.setAdapter(adapter);
+        gridView.setAdapter(adapter);
 
     }
 }
