@@ -21,27 +21,27 @@ public class SongAdapter extends ArrayAdapter<Song> {
     public View getView(int position, View convertView, ViewGroup parent)
 
     {
-        View gridItemView = convertView;
-        if (gridItemView == null) {
-            gridItemView = LayoutInflater.from(getContext()).inflate(
+        View listItemView = convertView;
+        if (listItemView == null) {
+            listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
         Song currentSong = getItem(position);
 
-        TextView artistTextView = gridItemView.findViewById(R.id.artist_text_view);
+        TextView artistTextView = listItemView.findViewById(R.id.artist_text_view);
 
         artistTextView.setText(currentSong.getArtist());
 
-        TextView titleTextView = gridItemView.findViewById(R.id.title_text_view);
+        TextView titleTextView = listItemView.findViewById(R.id.title_text_view);
 
         titleTextView.setText(currentSong.getTitle());
 
-        TextView albumTextView = gridItemView.findViewById(R.id.album_text_view);
+        TextView albumTextView = listItemView.findViewById(R.id.album_text_view);
 
         albumTextView.setText(currentSong.getAlbum());
 
-        return gridItemView;
+        return listItemView;
 
     }
 

@@ -6,19 +6,19 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class Album1Activity extends AppCompatActivity {
+public class Album3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_album1);
+        setContentView(R.layout.activity_album3);
 
-    ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song ("Metallica", "Enter Sandman", "Metallica"));
-        songs.add(new Song("Metallica", "Nothing Else Matters", "Metallica"));
+        ArrayList<Song> songs = new ArrayList<Song>();
+        songs.add(new Song("Massive Attack", "Angel", "Mezzanine"));
+        songs.add(new Song("Massive Attack", "Teardrop", "Mezzanine"));
 
 
-    SongAdapter adapter = new SongAdapter(this, songs);
+        SongAdapter adapter = new SongAdapter(this, songs);
 
         ListView listView = findViewById(R.id.listview);
 
